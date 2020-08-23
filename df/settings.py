@@ -86,8 +86,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'df',
         'USER': 'root',
-        'PASSWORD': '990105',
-        'HOST': '192.168.153.128',
+        'PASSWORD': '******',
+        'HOST': '***.***.***.***',
         'PORT': '3306'
     }
 }
@@ -145,16 +145,16 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
 # 发送邮箱的邮件
-EMAIL_HOST_USER = 'lzj956573391@163.com'
-EMAIL_HOST_PASSWORD = 'CARMSQDNZUYBMZXT'
-EMAIL_FROM = '天天生鲜<lzj956573391@163.com>'
+EMAIL_HOST_USER = '***@163.com'
+EMAIL_HOST_PASSWORD = '***SQDNZUYBMZXT'
+EMAIL_FROM = '***'
 
 
 # Django的缓存配置
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.153.128:6379/9",
+        "LOCATION": "redis://***.***.***.***:6379/9",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -174,7 +174,7 @@ DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
 # 设置 fastdfs文件系统 使用的 client.conf文件路径
 FDFS_CLIENT_CONF = './utils/fdfs/client.conf'
 # 设置 fastdfs存储服务器上 nginx使用的IP和端口号
-FDFS_STORAGE_URL = 'http://192.168.153.128:8000/'
+FDFS_STORAGE_URL = 'http://***.***.***.***:8000/'
 
 # 全文检索框架的配置
 HAYSTACK_CONNECTIONS = {
